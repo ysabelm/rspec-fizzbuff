@@ -1,0 +1,5 @@
+--color
+## Displays each full name of feature for tests (comment to use SHORT display)
+--format d
+## Will stop at first failing test
+#--fail-fast
