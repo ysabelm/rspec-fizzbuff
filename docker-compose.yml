@@ -4,4 +4,4 @@ web:
     - .:/fizzbuzz
   ports:
     - "3000:3000"
-  # command: bash &
+  command: rspec

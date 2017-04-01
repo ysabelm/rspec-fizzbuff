@@ -12,4 +12,4 @@ RUN bundle install
 ADD . /fizzbuzz
 WORKDIR /fizzbuzz
 
-CMD bash
+# CMD bash
