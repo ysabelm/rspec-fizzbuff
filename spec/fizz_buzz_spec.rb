@@ -9,42 +9,42 @@ describe FizzBuzz do
     expect(subject.numbers).to eq(numbers)
   end
 
-  xit 'Fizzify devrait renvoyer Fizz pour un multiple de 3' do
+  it 'Fizzify devrait renvoyer Fizz pour un multiple de 3' do
     expect(subject.fizzify(3)).to eq("Fizz")
   end
 
-  xit 'Fizzify devrait renvoyer le nombre pour un NON-multiple de 3' do
+  it 'Fizzify devrait renvoyer le nombre pour un NON-multiple de 3' do
     number = 7
     expect(subject.fizzify(number)).to eq(number)
   end
 
-  xit 'Fizzify devrait renvoyer Buzz pour un multiple de 5' do
+  it 'Fizzify devrait renvoyer Buzz pour un multiple de 5' do
     expect(subject.fizzify(5)).to eq("Buzz")
   end
 
-  xit 'Fizzify devrait renvoyer FizzBuzz pour un multiple de 3 et 5' do
+  it 'Fizzify devrait renvoyer FizzBuzz pour un multiple de 3 et 5' do
     expect(subject.fizzify(15)).to eq("FizzBuzz")
   end
 
 
-  xit 'Fizzify devrait renvoyer Fizz pour les multiples de 3' do
+  it 'Fizzify devrait renvoyer Fizz pour les multiples de 3' do
     expect(subject.fizzify(3)).to eq("Fizz")
     expect(subject.fizzify(6)).to eq("Fizz")
     expect(subject.fizzify(9)).to eq("Fizz")
   end
 
-  xit 'Fizzify devrait renvoyer Buzz pour les multiples de 5' do
+  it 'Fizzify devrait renvoyer Buzz pour les multiples de 5' do
     expect(subject.fizzify(5)).to eq("Buzz")
     expect(subject.fizzify(10)).to eq("Buzz")
     expect(subject.fizzify(20)).to eq("Buzz")
   end
 
 
-  xit 'Result devrait afficher FizzBuzz pour un multiples de 3 ET 5' do
+  it 'Result devrait afficher FizzBuzz pour un multiples de 3 ET 5' do
     expect(subject.result[14]).to eq("FizzBuzz")
   end
 
-  xit 'Result devrait renvoyer le FizzBuff_result' do
+  it 'Result devrait renvoyer le FizzBuff_result' do
     expect(subject.result).to eq(fizz_buzz_result)
   end
 
